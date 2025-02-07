@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COFFEE WEBSITE </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parkinsans:wght@300..800&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--For the navigation bar and for the loading animation-->
+    <div class="loader-container">
+        <div class="loader-text">Enter The Heaven Of Coffee</div>
+    </div>
+    <header id = "nav1">
+        
+        <a href ="#"><img src="coffee.png" height="100px" width="100px"></a>      
+         <nav>
+             <a href ="#main" class ="active">Home</a>
+             <a href ="#page2" class ="active">About Us</a>
+             <a href ="#service" class ="active">Services</a>
+             <a href ="#contact" class="active">Contact Us</a>
+         </nav>
+         
+         </header>
+      
+<video autoplay loop muted src="coffee.mp4"></video>
+
+<!--For the landing page of the website-->
+<div id="main" >
+<div id="page1" id = "home">
+    <h1>DRINK. SIP. ENJOY.</h1>
+    <h2>WELCOME TO CAFE COFFEE DAY</h2>
+    <p>Discover the rich aroma and bold flavors in every cup. Our coffee isn't just a drink—it's an experience crafted with passion and precision. From the finest beans to the perfect brew, we bring warmth, comfort, and energy to your day. Sip, savor, and let the magic of coffee awaken your senses.</p>    
+    <button type="submit" class="btn" onclick="openPopup()">LIKE US ❤️</button>
+    <div class="popup" id = "popup">
+        <img src="heart.png">
+        <h2>Thank You!</h2>
+        <pre>Thanks For Showing Your Love here
+Always waiting for your response
+        </pre>
+        <button type="button" onclick = "closePopup()">LOVE YOU</button>
+    </div>
+</div>
+<!--For the about us section of the website-->
+<div id="page2" >
+    
+    <div class="swiper text-slider">
+     <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <h1>Who are we?</h1>
+            <p>We are coffee enthusiasts dedicated to crafting the perfect brew. With premium beans, skilled baristas, and a warm ambiance, we create an unforgettable coffee experience. More than a café, we’re a community where every cup tells a story.</p>
+        </div>
+        <div class="swiper-slide">
+            <h1>How we started</h1>
+            <p>Our journey began with a shared love for rich, aromatic coffee. What started as a small idea among friends turned into a cozy café, where passion meets flavor. From carefully sourced beans to handcrafted brews, we bring people together over every cup.</p>
+        </div>
+        <div class="swiper-slide">
+            <h1>Our Menu</h1>
+            <p>Our menu is a blend of classic favorites and unique creations. From rich espressos to creamy lattes, refreshing cold brews, and delicious pastries, every item is crafted with quality ingredients and passion to delight your taste buds.</p>
+        </div>
+        <div class="swiper-slide">
+            <h1>Our Address</h1>
+            <p>Find us at New Colony, Dhanbad . A cozy corner where great coffee meets great company. Whether you're here to relax, work, or catch up with friends, our doors are always open for your perfect coffee moment.</p>
+        </div>
+     </div>
+    </div>
+    <div class="swiper image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="frame">
+                    <img src = "coffee1.png" height="200px" width="200px" id = "img1">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="frame">
+                    <img src = "coffee03.png" height="200px" width="200px" id = "img1">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="frame">
+                    <img src = "coffee02.png" height = "200px" width="200px" id = "img1">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="frame">
+                    <img src = "coffee4.png" height="200px" width="200px" id = "img1">
+                </div>
+            </div>
+                     
+        </div>
+    </div>
+</div>
+<!--For the services section of the website-->
+<section id = "service">
+    <div class="service-row">
+        <h2 class = "section-heading">
+            Our Services
+        </h2>
+    </div>
+<div class="service-row">
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fab fa-artstation"></i>
+            </div>
+            <h3> Artisan Coffee Brewing</h3>
+            <p>Experience coffee like never before!
+                We offer a range of brewing methods—pour-over, French press, siphon, and cold brew—crafted by skilled baristas to bring out unique flavors in every cup.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+        <i class="fas fa-coffee"></i>
+            </div>
+            <h3> Coffee Bean Retail</h3>
+            <p>Take the freshness home with you.
+                Choose from our selection of freshly roasted, ethically sourced coffee beans. We offer whole beans or ground options tailored to your brewing preferences.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fas fa-place-of-worship"></i>
+            </div>
+            <h3>Brewmaster Workshops</h3>
+            <p>Learn the art of perfect brewing.
+                Join our interactive workshops where coffee enthusiasts can learn about bean origins, roasting techniques, and hands-on brewing sessions with expert baristas.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fas fa-glass-cheers"></i>
+            </div>
+            <h3>Signature Beverages & Seasonal Specials</h3>
+            <p>Not just coffee, but an experience.
+                Discover our signature drinks and rotating seasonal specials, from spiced lattes in winter to refreshing cold brews in summer, each crafted with creativity and passion.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fas fa-window-restore"></i>
+            </div>
+            <h3>Catering & Event Services</h3>
+            <p>Brew magic at your events.
+                From corporate meetings to private gatherings, we offer coffee catering with mobile espresso bars, expert baristas, and customized drink menus tailored to your event’s vibe.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fas fa-wifi"></i>
+            </div>
+            <h3>Cozy Workspace & Free Wi-Fi</h3>
+            <p>Your productivity hub with a coffee twist.
+                We provide a calm, inspiring environment with cozy seating, charging points, and free high-speed Wi-Fi, perfect for work, study, or casual meet-ups.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--For the footer of the website-->
+<footer id= "contact">
+    <div class="row">
+    <div class="col">
+        <img src="" class="bitlogo2">
+        <p>Cafe Coffee Day - The solution to Your thirst.</p>
+    </div>
+    <div class="col">
+        <h3>Address<div class="underline"><span></span></div></h3>
+        <p>Sindri Campus</p>
+        <p>Sindri, PIN 826004, Jharkhand</p>
+        <p class = "email-id">cafecoffee@gmail.ac.in
+
+        </p>
+        <h4>0326 235 0495</h4>
+    </div>
+    <div class="col">
+        <h3>Links<div class="underline"><span></span></div></h3>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#page2">About Us</a></li>
+            <li><a href="#service">Services</a></li>
+     </ul>
+    </div>
+    <div class="col">
+        <h3>Join Us!<div class="underline"><span></span></div></h3>
+        <form>
+            <i class='bx bx-envelope'></i>
+            <input type="email" placeholder="Enter your email Id" required>
+            <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+        </form>
+        <div class="social-icons">
+            <i class='bx bxl-facebook-circle' ></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-instagram-alt' ></i>
+
+        </div>
+    </div>
+    <div>
+        <hr>
+        <p class="copyright">Cafe Coffee Day © 2025 - All Rights Reserved</p>
+</footer>
+</div>
+<!--For the links of the JS libraries-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>    
+</body>
+</html>
